@@ -17,7 +17,6 @@ body {
 header {
   background-color: var(--background-color);
   padding: 1rem 0;
-
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -27,14 +26,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1920px;
   padding: 0 var(--side-padding);
 }
 
-.logo img {
-  height: 32px;
-}
+
 
 .main-nav {
   display: flex;

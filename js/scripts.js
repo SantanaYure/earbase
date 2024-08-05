@@ -1,6 +1,8 @@
-// scripts.js
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mainNav = document.querySelector('.main-nav');
 
-function scrollToNextSection() {
-  const nextSection = document.getElementById('next-section');
-  nextSection.scrollIntoView({ behavior: 'smooth' });
-}
+  menuToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+  });
+});

@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #0540F1;
+  --background-color: #FFF;
+  --text-color: #262626;
+  --side-padding: 7rem;
+  /* 112px em rems */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--background-color);
+  padding: 1rem 0;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  padding: 0 var(--side-padding);
+}
+
+
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin-left: 2rem;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.main-nav li a:hover {
+  color: var(--primary-color);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 2px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --side-padding: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --side-padding: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0 var(--side-padding);
+  }
+
+  header {
+    position: relative;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 1rem var(--side-padding);
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav li {
+    margin: 1rem 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --side-padding: 1.5rem;
+  }
+
+  .logo img {
+    height: 18px;
+  }
+}

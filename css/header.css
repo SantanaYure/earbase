@@ -1,125 +1,222 @@
-:root {
-  --primary-color: #0540F1;
-  --background-color: #FFF;
-  --text-color: #262626;
-  --side-padding: 7rem;
-  /* 112px em rems */
-}
-
-body {
+/* Aplicando a fonte Montserrat ao HTML */
+html {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+}
+
+/* Ajuste de compensação da navbar fixa */
+body {
+  padding-top: 60px;
+  /* Ajuste o valor conforme a altura da navbar */
 }
 
 header {
-  background-color: var(--background-color);
-  padding: 1rem 0;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
   position: fixed;
+  /* Navbar fixa */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  /* Cor de fundo da navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra */
 }
 
-nav {
+/* Container reutilizável com 80% de largura */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  /* Garantir que padding e border sejam incluídos na largura total */
+}
+
+/* Estilos básicos da navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Estilo da logo */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 1920px;
-  padding: 0 var(--side-padding);
 }
 
-
-
-.main-nav {
-  display: flex;
+/* Estilo do menu */
+.menu {
   list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  /* Espaçamento entre os itens do menu */
   margin: 0;
   padding: 0;
 }
 
-.main-nav li {
-  margin-left: 2rem;
-}
-
-.main-nav li a {
+/* Estilo dos itens do menu */
+.menu li a {
+  font-weight: 600;
   text-decoration: none;
-  color: var(--text-color);
-  font-size: 1rem;
-  transition: color 0.3s;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
-.main-nav li a:hover {
-  color: var(--primary-color);
+.menu li a:hover {
+  color: #0540F1;
 }
 
-.menu-toggle {
+/* Estilo do hamburger */
+.hamburger {
   display: none;
   flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
   cursor: pointer;
 }
 
-.menu-toggle span {
-  width: 25px;
+.hamburger span {
+  background-color: #333;
   height: 3px;
-  background-color: var(--text-color);
-  margin: 2px 0;
-  transition: 0.4s;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 1200px) {
-  :root {
-    --side-padding: 5rem;
-  }
+/* Animação do hamburger */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-@media (max-width: 992px) {
-  :root {
-    --side-padding: 3rem;
-  }
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
 }
 
-@media (max-width: 768px) {
-  nav {
-    padding: 0 var(--side-padding);
-  }
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
-  header {
+/* Estilo responsivo para diferentes breakpoints */
+
+/* X-Small <576px */
+@media (max-width: 575.98px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
+    /* Não fixa a navbar */
+    box-shadow: none;
+    /* Remove a sombra */
   }
 
-  .main-nav {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
     display: none;
-    flex-direction: column;
     position: absolute;
-    top: 60px;
+    right: 15px;
+    top: 50px;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
+/* Small ≥576px */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .navbar {
+    position: relative;
+    /* Não fixa a navbar */
+    box-shadow: none;
+    /* Remove a sombra */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
+/* Medium ≥768px */
+@media (min-width: 768px) and (max-width: 1365.99px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .navbar {
+    position: fixed;
+    /* Fixa a navbar a partir deste breakpoint */
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--background-color);
-    padding: 1rem var(--side-padding);
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona a sombra */
   }
 
-  .main-nav.active {
-    display: flex;
-  }
-
-  .main-nav li {
-    margin: 1rem 0;
-  }
-
-  .menu-toggle {
-    display: flex;
+  body {
+    padding-top: 60px;
+    /* Compensa a altura da navbar fixa */
   }
 }
 
-@media (max-width: 576px) {
-  :root {
-    --side-padding: 1.5rem;
+/* Large ≥1366px */
+@media (min-width: 1366px) {
+  .hamburger {
+    display: none;
   }
 
-  .logo img {
-    height: 18px;
+  .menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background: none;
+    border: none;
+    padding: 0;
   }
+
+
 }

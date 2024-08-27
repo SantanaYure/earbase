@@ -1,0 +1,70 @@
+/* Reset CSS básico */
+
+/* Remove margem e padding padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Garante que a altura e largura sejam interpretadas de forma consistente */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove bullets e margem/padding de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove a decoração padrão dos links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Garante que botões e inputs não tenham estilos padrão */
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Estilo padrão para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Zera o espaçamento de tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove estilo padrão de citações */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+}

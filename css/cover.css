@@ -1,0 +1,78 @@
+section {
+  padding-top: 0;
+  margin: 0 auto;
+
+}
+
+.cover {
+  text-align: center;
+}
+
+.cover figure img {
+  margin: 16rem auto 0 auto;
+  width: 30rem;
+}
+
+.cover h1 {
+  color: #262626;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.8125rem;
+  padding-top: 2rem;
+}
+
+.cover p {
+  color: #262626;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.6875rem;
+  letter-spacing: -0.01125rem;
+  padding-top: 2rem;
+}
+
+.cover a {
+  display: inline-block;
+  border-radius: 0.5rem;
+  background: #0540F1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3125rem;
+  letter-spacing: 0.0525rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding: 1rem 4.76rem;
+  cursor: pointer;
+
+}
+
+/* Estilo responsivo para diferentes breakpoints */
+
+
+@media (max-width: 1365px) {
+  .cover figure img {
+    margin: 8rem auto 0 auto;
+    width: 15rem;
+    padding-top: 1rem;
+  }
+
+  .cover h1 {
+    font-size: 1.175rem;
+    padding-top: 1rem;
+  }
+
+  .cover p {
+    font-size: 0.5625rem;
+    padding-top: 1rem;
+  }
+
+  .cover a {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    padding: 0.5rem 2.38rem;
+
+  }
+}

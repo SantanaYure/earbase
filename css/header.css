@@ -1,44 +1,41 @@
-/* Aplicando a fonte Montserrat ao HTML */
-html {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* header.css */
 
-/* Ajuste de compensação da navbar fixa */
-body {
-  padding-top: 60px;
-  /* Ajuste o valor conforme a altura da navbar */
-}
-
+/* Estilo básico para o header */
 header {
-  position: fixed;
-  /* Navbar fixa */
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
   background-color: #fff;
-  /* Cor de fundo da navbar */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Sombra */
 }
 
-/* Container reutilizável com 80% de largura */
+/* Estilo do header fixo para telas maiores (1366px ou mais) */
+@media (min-width: 1366px) {
+  header {
+    position: fixed;
+    /* Navbar fixa para telas a partir de 1366px */
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Container com padding flexível */
 .container {
-  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
-  /* Garantir que padding e border sejam incluídos na largura total */
 }
 
-/* Estilos básicos da navbar */
+/* Estilo básico para a navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  width: 100%;
+  padding: 2rem 0;
+  /* Padding de 2rem no topo e embaixo */
 }
 
 /* Estilo da logo */
@@ -46,34 +43,46 @@ header {
   height: 24px;
 }
 
-/* Estilo do menu */
+/* Estilo básico do menu */
 .menu {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  /* Espaçamento entre os itens do menu */
   margin: 0;
   padding: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Estilo dos itens do menu */
-.menu li a {
-  font-weight: 600;
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  transition: color 0.3s ease;
+/* Ocultar menu por padrão em telas pequenas */
+.menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 4rem;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
 }
 
-.menu li a:hover {
-  color: #0540F1;
+/* Mostrar menu quando ativo */
+.menu.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* Estilo do hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 30px;
   height: 20px;
   cursor: pointer;
@@ -100,118 +109,120 @@ header {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Estilo responsivo para diferentes breakpoints */
+/* Media Queries para Breakpoints */
 
-/* X-Small <576px */
-@media (max-width: 575.98px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    /* Não fixa a navbar */
-    box-shadow: none;
-    /* Remove a sombra */
-  }
-
-  .hamburger {
-    display: flex;
+/* Breakpoint até 320px */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 2rem;
   }
 
   .menu {
     display: none;
-    position: absolute;
-    right: 15px;
-    top: 50px;
-    flex-direction: column;
-    gap: 10px;
-    background: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-  }
-
-  .menu.active {
-    display: flex;
-  }
-}
-
-/* Small ≥576px */
-@media (min-width: 576px) and (max-width: 991.98px) {
-  .navbar {
-    position: relative;
-    /* Não fixa a navbar */
-    box-shadow: none;
-    /* Remove a sombra */
   }
 
   .hamburger {
     display: flex;
-  }
-
-  .menu {
-    display: none;
-    position: absolute;
-    right: 15px;
-    top: 50px;
-    flex-direction: column;
-    gap: 10px;
-    background: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-  }
-
-  .menu.active {
-    display: flex;
-  }
-}
-
-/* Medium ≥768px */
-@media (min-width: 768px) and (max-width: 1365.99px) {
-  .hamburger {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-    position: static;
-    flex-direction: row;
-    background: none;
-    border: none;
-    padding: 0;
-  }
-
-  .navbar {
-    position: fixed;
-    /* Fixa a navbar a partir deste breakpoint */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Adiciona a sombra */
   }
 
   body {
-    padding-top: 60px;
-    /* Compensa a altura da navbar fixa */
+    font-size: 0.75rem;
+    /* 12px em rem */
   }
 }
 
-/* Large ≥1366px */
-@media (min-width: 1366px) {
-  .hamburger {
+/* Breakpoint até 480px */
+@media (min-width: 321px) and (max-width: 480px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .menu {
     display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  body {
+    font-size: 0.75rem;
+    /* 12px em rem */
+  }
+}
+
+/* Breakpoint até 780px */
+@media (min-width: 481px) and (max-width: 780px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  body {
+    font-size: 0.875rem;
+    /* 14px em rem */
+  }
+}
+
+/* Breakpoint até 1365.99px */
+@media (min-width: 781px) and (max-width: 1365.99px) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  .menu {
+    display: none;
+    /* Menu escondido até 1365.99px */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  body {
+    font-size: 1rem;
+    /* 16px em rem */
+  }
+}
+
+/* Estilo para telas maiores (1366px ou mais) */
+@media (min-width: 1366px) {
+  .container {
+    padding: 0 4rem;
   }
 
   .menu {
     display: flex;
+    gap: 2rem;
     position: static;
+    /* Remove a posição absoluta */
     flex-direction: row;
-    background: none;
-    border: none;
+    /* Exibe os itens em uma linha */
+    background-color: transparent;
+    /* Remove o fundo */
     padding: 0;
+    border: none;
+    /* Remove a borda */
+    box-shadow: none;
+    /* Remove a sombra */
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
   }
 
+  .hamburger {
+    display: none;
+  }
 
+  body {
+    font-size: 1rem;
+    /* 16px em rem */
+  }
 }

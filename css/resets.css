@@ -68,3 +68,16 @@ q:before,
 q:after {
   content: '';
 }
+
+/* Estilo de foco padrão para links e botões */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #0540F1;
+  /* Cor da borda de foco */
+  outline-offset: 2px;
+  /* Espaço entre o foco e o elemento */
+  border-radius: 4px;
+  /* Bordas arredondadas para foco */
+}

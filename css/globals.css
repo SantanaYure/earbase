@@ -1,0 +1,33 @@
+/* globals.css */
+
+/* Estilo Geral para o .container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Estilo responsivo para diferentes breakpoints */
+
+/* Para telas menores */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Para telas médias */
+@media (min-width: 577px) and (max-width: 991px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Para telas grandes */
+@media (min-width: 992px) {
+  .container {
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,144 @@
+/* sobre.css */
+
+h2 {
+  text-align: center;
+  padding-top: 8rem;
+  font-size: 2rem;
+}
+
+
+/* sobre.css */
+
+#sobre-evento {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.text-content p {
+  text-align: justify;
+
+}
+
+#sobre-evento .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  /* Margem padrão de 4rem, ajustada para breakpoints menores */
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  padding-top: 4rem;
+}
+
+/* Configuração do grid para a seção "Sobre" */
+#sobre-evento .content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Duas colunas para telas maiores */
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Primeiro bloco de texto */
+#sobre-evento .text-content:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Imagem */
+#sobre-evento .event-image {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sobre-evento .event-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Segundo bloco de texto */
+#sobre-evento .text-content:last-child {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  align-self: start;
+}
+
+/* Ajustes para telas até 780px */
+@media (max-width: 780px) {
+  #sobre-evento .container {
+    padding: 0 2rem;
+    /* Ajuste para 2rem nas margens */
+  }
+
+  #sobre-evento .content-wrapper {
+    grid-template-columns: 1fr;
+    /* Muda para uma coluna única */
+    grid-template-rows: auto auto auto;
+    /* Três linhas: Texto, Imagem, Texto */
+    gap: 1.5rem;
+    /* Reduzindo o gap entre os elementos */
+  }
+
+  #sobre-evento .text-content:first-child,
+  #sobre-evento .event-image,
+  #sobre-evento .text-content:last-child {
+    grid-column: 1 / 2;
+    /* Todos os elementos ocupam a mesma coluna */
+  }
+
+  #sobre-evento .text-content:first-child {
+    grid-row: 1 / 2;
+    /* Primeiro bloco de texto */
+    font-size: 0.875rem;
+    /* Ajuste de fonte para 14px (0.875rem) */
+  }
+
+  #sobre-evento .event-image {
+    grid-row: 2 / 3;
+    /* Imagem */
+  }
+
+  #sobre-evento .text-content:last-child {
+    grid-row: 3 / 4;
+    /* Segundo bloco de texto */
+    font-size: 0.875rem;
+    /* Ajuste de fonte para 14px (0.875rem) */
+  }
+}
+
+/* Ajustes para telas entre 781px e 1365.99px */
+@media (min-width: 781px) and (max-width: 1365.99px) {
+  #sobre-evento .container {
+    padding: 0 4rem;
+    /* Margem de 4rem para telas maiores */
+  }
+
+  #sobre-evento .text-content {
+    font-size: 1rem;
+    /* Fonte de 16px */
+  }
+}
+
+/* Estilo padrão para telas maiores (1366px ou mais) */
+@media (min-width: 1366px) {
+  #sobre-evento .container {
+    padding: 0 4rem;
+    /* Margem de 4rem */
+  }
+
+  #sobre-evento .text-content {
+    font-size: 1rem;
+    /* Fonte de 16px */
+  }
+}

@@ -1,0 +1,169 @@
+/* trilhas.css */
+
+#trilhas {
+  background-color: #f4f4f4;
+}
+
+#trilhas .container {
+  max-width: 75rem;
+  /* 1200px = 75rem */
+  margin: 0 auto;
+  padding: 0 4rem;
+  /* Seguindo as margens já definidas */
+  box-sizing: border-box;
+}
+
+#trilhas h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+/* Estilo geral para todos os cards */
+.card {
+  background-color: #fff;
+  border-radius: 2.8125rem;
+  border: 1px solid #000;
+  border-bottom: 6px solid #000;
+  /* Ajuste para 2.8125rem */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  /* 4px = 0.25rem, 8px = 0.5rem */
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.3125rem);
+  /* 5px = 0.3125rem */
+}
+
+.card-content {
+  max-width: 60%;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.card-content .saiba-mais {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.card-content .saiba-mais span {
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+/* Estilo específico para o botão "Saiba mais" */
+.saiba-mais::before {
+  content: "";
+  font-size: 1.25rem;
+  display: inline-block;
+}
+
+
+
+/* Estilo da imagem no card */
+.card-image {
+  max-width: 40%;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos específicos para cada card */
+#pesqbase {
+  background-color: #fff;
+}
+
+#pesqbase span {
+  color: #333;
+}
+
+
+#weibase {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#xbase {
+  background-color: #333;
+  color: #fff;
+}
+
+#progbase {
+  background-color: #fff;
+  color: #333;
+}
+
+#progbase span {
+  color: #333;
+}
+
+#robobase {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#minicursos {
+  background-color: #333;
+  color: #fff;
+}
+
+#meninasdigitais {
+  background-color: #fff;
+}
+
+#meninasdigitais span {
+  color: #333;
+}
+
+/* Responsividade para telas até 780px */
+@media (max-width: 48.75rem) {
+
+  /* 780px = 48.75rem */
+  .container {
+    padding: 0 2rem;
+  }
+
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    /* Uma coluna para telas menores */
+  }
+
+  .card {
+    flex-direction: column;
+    /* Empilha o conteúdo verticalmente */
+  }
+
+  .card-content {
+    max-width: 100%;
+  }
+
+  .card-image {
+    margin-top: 1rem;
+    max-width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,28 @@
+#programacao .container {
+  display: flex;
+  justify-content: center;
+
+}
+
+#programacao .content-programacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content-programacao a {
+  display: inline-block;
+  border-radius: 0.5rem;
+  background: #0540F1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3125rem;
+  letter-spacing: 0.0525rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding: 1rem 4.76rem;
+  cursor: pointer;
+}

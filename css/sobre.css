@@ -10,8 +10,9 @@
 /* sobre.css */
 
 #sobre-evento {
-  padding: 4rem 0;
-  background-color: #fff;
+  padding: 2rem 0;
+  background: url('../assets/star.png') no-repeat;
+  background-position: bottom left;
 }
 
 .text-content p {

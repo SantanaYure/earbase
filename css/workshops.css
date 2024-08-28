@@ -1,10 +1,10 @@
-/* trilhas.css */
+/* Workshops.css */
 
-#trilhas {
+#Workshopss {
   background-color: #f4f4f4;
 }
 
-#trilhas .container {
+#Workshops .container {
   max-width: 75rem;
   /* 1200px = 75rem */
   margin: 0 auto;
@@ -13,9 +13,10 @@
   box-sizing: border-box;
 }
 
-#trilhas h2 {
+#Workshops h2 {
   text-align: center;
   font-size: 2rem;
+  padding-top: 4rem;
 }
 
 .cards-wrapper {
@@ -141,6 +142,11 @@
 
 /* Responsividade para telas até 780px */
 @media (max-width: 48.75rem) {
+  #Workshops h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
 
   /* 780px = 48.75rem */
   .container {

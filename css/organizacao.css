@@ -1,0 +1,37 @@
+#organizacao {
+  background-color: #333;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#organizacao .container {
+  display: flex;
+  justify-content: center;
+
+}
+
+#organizacao .content-organizacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-organizacao img {
+  padding-top: 4rem;
+}
+
+.content-programacao a {
+  display: inline-block;
+  border-radius: 0.5rem;
+  background: #0540F1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3125rem;
+  letter-spacing: 0.0525rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding: 1rem 4.76rem;
+  cursor: pointer;
+}

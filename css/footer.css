@@ -1,66 +1,79 @@
 #footer {
-  background-color: #f4f4f4;
-  padding: 2rem 0;
+  background-color: #f8f8f8;
+  padding: 1.25rem;
+  /* 20px */
 }
 
-#footer .container {
+.container {
   max-width: 75rem;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 4rem 4rem;
   box-sizing: border-box;
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
-.footer-content .social-media {
-  text-align: left;
+.logo img {
+  max-width: 6.25rem;
+
+  /* 100px */
+}
+
+.social-media {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: self-end;
+  justify-content: right;
+  gap: 1rem;
 }
 
-.footer-content .social-media span {
+.social-media span {
   display: block;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  /* 10px */
 }
 
-.footer-content .social-media .icons {
+.icons {
   display: flex;
-  justify-content: flex-start;
-  gap: 0.5rem;
+  gap: 3rem;
+  justify-content: space-around;
 }
 
-.footer-content .social-media .icons a {
-  display: inline-block;
-}
-
-.footer-content .social-media .icons img {
+.icons a img {
+  width: 1.5rem;
+  /* 24px */
   height: 1.5rem;
+  /* 24px */
 }
 
-.footer-content .logo {
-  flex: 0 0 auto;
-}
+@media (max-width: 37.5rem) {
 
-/* Responsividade para telas até 780px */
-@media (max-width: 48.75rem) {
+  /* 600px */
   .footer-content {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-bottom: 0.625rem;
+    /* 10px */
+  }
+
+  .social-media {
     text-align: center;
   }
 
-  .footer-content .social-media {
-    align-items: center;
-    margin-top: 1rem;
-  }
-
-  .footer-content .social-media .icons {
+  .icons {
     justify-content: center;
   }
 }

@@ -6,6 +6,8 @@ section {
 
 .cover {
   text-align: center;
+  background: url('../assets/elevador.svg') no-repeat right 1%;
+  padding-bottom: 8rem;
 }
 
 .cover figure img {

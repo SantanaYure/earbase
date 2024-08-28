@@ -1,6 +1,6 @@
 /* sobre.css */
 
-h2 {
+#sobre-evento h2 {
   text-align: center;
   padding-top: 8rem;
   font-size: 2rem;
@@ -77,6 +77,10 @@ h2 {
 
 /* Ajustes para telas até 780px */
 @media (max-width: 780px) {
+  #sobre-evento h2 {
+    padding-top: 2rem;
+  }
+
   #sobre-evento .container {
     padding: 0 2rem;
     /* Ajuste para 2rem nas margens */
@@ -120,6 +124,10 @@ h2 {
 
 /* Ajustes para telas entre 781px e 1365.99px */
 @media (min-width: 781px) and (max-width: 1365.99px) {
+  #sobre-evento h2 {
+    padding-top: 2rem;
+  }
+
   #sobre-evento .container {
     padding: 0 4rem;
     /* Margem de 4rem para telas maiores */

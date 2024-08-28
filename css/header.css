@@ -70,6 +70,10 @@ header {
   pointer-events: none;
 }
 
+.menu a {
+  outline: none;
+}
+
 /* Mostrar menu quando ativo */
 .menu.active {
   display: flex;

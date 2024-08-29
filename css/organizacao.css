@@ -1,41 +1,24 @@
-#organização h2 {
-  padding-top: 8rem;
-}
-
 #organizacao {
+  text-align: center;
+  margin-top: 8rem;
+  padding: 8rem 0;
   background-color: #333;
-  margin-top: 4rem;
-  padding-bottom: 4rem;
 }
 
-#organizacao .container {
-  display: flex;
-  justify-content: center;
+#organizacao h2 {
+  font-size: 2rem;
+}
 
+#organizacao h3 {
+  padding-top: 2rem;
 }
 
 #organizacao .content-organizacao {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-organizacao img {
-  padding-top: 4rem;
-}
-
-.content-programacao a {
-  display: inline-block;
-  border-radius: 0.5rem;
-  background: #0540F1;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.3125rem;
-  letter-spacing: 0.0525rem;
-  text-transform: uppercase;
-  margin-top: 2rem;
-  padding: 1rem 4.76rem;
-  cursor: pointer;
+  border-bottom: #0540F1 solid 6px;
+  border-right: #0540F1 solid 6px;
+  border-radius: 1rem;
+  width: 80%;
+  background-color: #fff;
+  margin: auto;
+  padding: 4rem 0;
 }

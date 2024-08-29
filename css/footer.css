@@ -20,8 +20,6 @@
 
 .logo img {
   max-width: 6.25rem;
-
-  /* 100px */
 }
 
 .social-media {
@@ -56,8 +54,6 @@
 }
 
 @media (max-width: 37.5rem) {
-
-  /* 600px */
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -66,7 +62,6 @@
 
   .logo {
     margin-bottom: 0.625rem;
-    /* 10px */
   }
 
   .social-media {

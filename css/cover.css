@@ -51,9 +51,6 @@ section {
 
 }
 
-/* Estilo responsivo para diferentes breakpoints */
-
-
 @media (max-width: 1365px) {
   .cover figure img {
     margin: 8rem auto 0 auto;

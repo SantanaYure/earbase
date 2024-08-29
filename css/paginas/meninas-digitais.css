@@ -1,26 +1,26 @@
-.meninas-digitais-content {
+.paginas-content {
   padding: 4rem 0;
 }
 
-.meninas-digitais-content p {
+.paginas-content p {
   padding: 1rem 0;
   text-align: justify;
 }
 
-.meninas-digitais-content ul {
+.paginas-content ul {
   list-style: disc;
   padding-left: 2rem;
 }
 
-.meninas-digitais-content h2 {
+.paginas-content h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.meninas-digitais-content li a {
+.paginas-content li a {
   outline: none;
 }
 
-.meninas-digitais-content li a:visited {
+.paginas-content li a:visited {
   color: #007bff;
 }

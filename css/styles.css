@@ -1,5 +1,6 @@
-@import 'index/resets.css';
-@import 'index/globals.css';
+@import 'resets.css';
+@import 'globals.css';
+
 @import 'index/header.css';
 @import 'index/cover.css';
 @import 'index/sobre.css';
@@ -8,7 +9,5 @@
 @import 'index/programacao.css';
 @import 'index/organizacao.css';
 
-@import 'meninas-digitais/hero.css';
-@import 'meninas-digitais/content.css';
-
-@import 'pesqbase/content.css';
+@import 'paginas/hero.css';
+@import 'paginas/meninas-digitais.css';

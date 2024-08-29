@@ -25,26 +25,33 @@
 }
 
 /* container da pagina - meninas-digitais */
-.meninas-digitais-container {
+.meninas-digitais-container,
+.pesqbase-container {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 @media (max-width: 576px) {
-  .meninas-digitais-container {
+
+  .meninas-digitais-container,
+  .pesqbase-container {
     padding: 0 0.5rem;
   }
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
-  .meninas-digitais-container {
+
+  .meninas-digitais-container,
+  .pesqbase-container {
     padding: 0 1rem;
   }
 }
 
 @media (min-width: 992px) {
-  .meninas-digitais-container {
+
+  .meninas-digitais-container,
+  .pesqbase-container {
     padding: 0 2rem;
   }
 }

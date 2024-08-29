@@ -23,3 +23,28 @@
     padding: 0 2rem;
   }
 }
+
+/* container da pagina - meninas-digitais */
+.meninas-digitais-container {
+  max-width: 80%;
+  margin: 88px auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .meninas-digitais-container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .meninas-digitais-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .meninas-digitais-container {
+    padding: 0 2rem;
+  }
+}

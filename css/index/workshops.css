@@ -145,6 +145,10 @@
 
   .card {
     flex-direction: column;
+    width: 100%;
+    /* Certificando que a largura se ajuste bem em telas menores */
+    height: auto;
+    /* Altura automática para preservar a proporção */
   }
 
   .card-content {
@@ -154,6 +158,6 @@
   .card-image {
     margin-top: 1rem;
     max-width: 100%;
-    text-align: center;
+    margin: 0 auto;
   }
 }

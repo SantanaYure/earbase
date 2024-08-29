@@ -8,6 +8,7 @@
 @import 'index/footer.css';
 @import 'index/programacao.css';
 @import 'index/organizacao.css';
+@import 'index/parceiros.css';
 
 @import 'paginas/hero.css';
-@import 'paginas/meninas-digitais.css';
+@import 'paginas/content.css';

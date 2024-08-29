@@ -1,0 +1,59 @@
+.paginas-content {
+  padding: 4rem 0;
+}
+
+.paginas-content p {
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+.paginas-content ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.paginas-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.paginas-content li a {
+  outline: none;
+}
+
+.paginas-content li a:visited {
+  color: #007bff;
+}
+
+.paginas-content .link {
+  color: #007bff;
+}
+
+.temas-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-card {
+  width: 48%;
+  border-radius: 1.5rem;
+  border: solid 1px #333;
+  padding: 4rem 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1023.98px) {
+  .temas-container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .theme-card {
+    width: 100%;
+    border-radius: 1.5rem;
+    border: solid 1px #333;
+    padding: 4rem 0;
+    box-sizing: border-box;
+  }
+}

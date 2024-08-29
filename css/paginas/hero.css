@@ -4,7 +4,9 @@
   padding: 4rem 0;
 }
 
-
+.minicursos {
+  background-color: #333;
+}
 
 .hero {
   display: grid;
@@ -25,6 +27,11 @@
   font-weight: 500;
   line-height: 80%;
   letter-spacing: 0.125rem;
+}
+
+.minicursos .hero h1 {
+  color: #333;
+  background: #fff;
 }
 
 .hero img {

@@ -1,0 +1,32 @@
+#parceiros h2 {
+  padding-top: 8rem;
+}
+
+#parceiros .container {
+  display: flex;
+  justify-content: center;
+
+}
+
+#parceiros .content-parceiros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.organizacao {
+  display: flex;
+  gap: 2rem;
+}
+
+.apoio {
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 1023.98px) {
+  .organizacao {
+    display: flex;
+    flex-direction: column;
+  }
+}

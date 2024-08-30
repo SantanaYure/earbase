@@ -1,18 +1,21 @@
-section {
+.hero-cover {
   padding-top: 0;
   margin: 0 auto;
+  background: url('../../assets/elevador.svg') no-repeat right bottom 1%;
 
 }
 
 .cover {
   text-align: center;
-  background: url('../assets/elevador.svg') no-repeat right 1%;
+  padding-top: 0.175rem;
   padding-bottom: 8rem;
+  background: url('../../assets/realidade-virtual.png') no-repeat left 1%;
 }
 
 .cover figure img {
   margin: 16rem auto 0 auto;
   width: 30rem;
+
 }
 
 .cover h1 {
@@ -48,6 +51,17 @@ section {
   margin-top: 2rem;
   padding: 1rem 4.76rem;
   cursor: pointer;
+
+}
+
+@media (max-width: 780px) {
+  #hero-cover {
+    background: none;
+  }
+
+  .cover {
+    background: none;
+  }
 
 }
 

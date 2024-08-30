@@ -146,9 +146,7 @@
   .card {
     flex-direction: column;
     width: 100%;
-    /* Certificando que a largura se ajuste bem em telas menores */
     height: auto;
-    /* Altura automática para preservar a proporção */
   }
 
   .card-content {

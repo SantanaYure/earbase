@@ -6,8 +6,17 @@
 
 #sobre-evento {
   padding: 2rem 0;
-  background: url('../assets/star.png') no-repeat;
+  background: url('../../assets/star.png') no-repeat;
   background-position: bottom left;
+}
+
+@media (max-width: 780px) {
+  #sobre-evento {
+
+    background: none;
+
+  }
+
 }
 
 .text-content p {

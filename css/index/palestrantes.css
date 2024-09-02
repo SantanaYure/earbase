@@ -1,25 +1,26 @@
-#programacao {
-  background: #f1f1f1;
+#palestrantes {
+  background: #fff;
+  padding-bottom: 8rem;
 }
 
-#programacao h2 {
+#palestrantes h2 {
   padding-top: 8rem;
 }
 
-#programacao .container {
+#palestrantes .container {
   display: flex;
   justify-content: center;
 
 }
 
-#programacao .content-programacao {
+#palestrantes .content-palestrantes {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
 
-.content-programacao a {
+.content-palestrantes a {
   display: inline-block;
   border-radius: 0.5rem;
   background: #0540F1;

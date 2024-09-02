@@ -12,8 +12,9 @@
 
 @media (max-width: 780px) {
   #sobre-evento {
-
-    background: none;
+    padding-bottom: 10.75rem;
+    background: url('../../assets/star-inverse.png') no-repeat;
+    background-position: bottom right;
 
   }
 

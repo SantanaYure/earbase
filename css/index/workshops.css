@@ -90,6 +90,10 @@
   color: #333;
 }
 
+#pesqbase span::before {
+  content: url('/assets/icon-saiba-mais.svg');
+}
+
 
 #weibase {
   background-color: #007bff;

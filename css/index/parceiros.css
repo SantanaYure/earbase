@@ -22,7 +22,21 @@
 
 .apoio {
   padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
+
+.logo-ifba {
+  width: 374px;
+  height: 136px;
+}
+
+.logo-uneb {
+  width: 150px;
+  height: 150px;
+}
+
 
 @media (max-width: 1023.98px) {
   .organizacao {

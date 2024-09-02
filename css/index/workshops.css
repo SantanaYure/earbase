@@ -1,162 +1,104 @@
-#Workshopss {
-  background-color: #f4f4f4;
+#workshops {
+  width: 100%;
 }
 
-#Workshops .container {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 0 4rem;
-  box-sizing: border-box;
+#workshops h2 {
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0 4rem 0;
 }
 
-#Workshops h2 {
-  text-align: center;
-  font-size: 2rem;
-  padding-top: 4rem;
-}
-
-.cards-wrapper {
+#workshops .cards {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* 2 colunas */
   gap: 2rem;
-  padding-top: 4rem;
+  /* Espaçamento entre os cards */
 }
 
-.card {
-  background-color: #fff;
+#workshops p {
+  padding-bottom: 2rem;
+  width: 60%;
+}
+
+
+#workshops .cards .card {
+  background-color: blue;
   border-radius: 2.8125rem;
-  border: 1px solid #000;
-  border-bottom: 6px solid #000;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border: #333 1px solid;
+  border-bottom: 8px #000 solid;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+#workshops .cards .card .content {
   display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-  transition: transform 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-.card:hover {
-  transform: translateY(-0.3125rem);
-}
-
-.card-content {
-  max-width: 60%;
-}
-
-.card-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.card-content p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-
-.card-content .saiba-mais {
+#workshops .cards .card a {
+  font-weight: 600;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  font-weight: bold;
+  gap: 0.5rem;
 }
 
-
-.card-content .saiba-mais span {
-  color: #fff;
-  margin-left: 0.5rem;
-}
-
-
-.saiba-mais::before {
-  content: "";
-  font-size: 1.25rem;
-  display: inline-block;
-}
-
-.card-image {
-  max-width: 40%;
-}
-
-.card-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-#pesqbase {
+#workshops .cards .card-pesqbase,
+#workshops .cards .card-progbase,
+#workshops .cards .card-meninas-digitais {
+  color: #333;
   background-color: #fff;
 }
 
-#pesqbase span {
+#workshops .cards .card .link-pesqbase,
+#workshops .cards .card .link-progbase,
+#workshops .cards .card .link-meninas-digitais {
   color: #333;
 }
 
+#workshops .cards .card-weibase,
+#workshops .cards .card-robobase {
+  color: #fff;
+  background-color: #0540F1;
+}
 
-
-#weibase {
-  background-color: #007bff;
+#workshops .cards .card .link-weibase,
+#workshops .cards .card .link-robobase {
   color: #fff;
 }
 
-#xbase {
+#workshops .cards .card-xbase,
+#workshops .cards .card-minicursos {
+  color: #fff;
   background-color: #333;
+}
+
+#workshops .cards .card .link-minicursos::before,
+#workshops .cards .card .link-xbase::before {
+  content: url('/assets/saiba-mais-icon-light.svg');
   color: #fff;
 }
 
-#progbase {
-  background-color: #fff;
-  color: #333;
-}
-
-#progbase span {
-  color: #333;
-}
-
-#robobase {
-  background-color: #007bff;
+#workshops .cards .card .link-xbase,
+#workshops .cards .card .link-minicursos {
   color: #fff;
 }
 
-#minicursos {
-  background-color: #333;
-  color: #fff;
+
+
+
+#workshops .cards .card a::before {
+  content: url('/assets/saiba-mais-icon.svg');
 }
 
-#meninasdigitais {
-  background-color: #fff;
+#workshops .cards .card .card-media img {
+  max-width: 10rem;
 }
 
-#meninasdigitais span {
-  color: #333;
-}
-
-@media (max-width: 48.75rem) {
-  #Workshops h2 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 2rem;
-  }
-
-  .container {
-    padding: 0 2rem;
-  }
-
-  .cards-wrapper {
+@media (max-width: 780px) {
+  #workshops .cards {
     grid-template-columns: 1fr;
-  }
-
-  .card {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-
-  .card-content {
-    max-width: 100%;
-  }
-
-  .card-image {
-    margin-top: 1rem;
-    max-width: 100%;
-    margin: 0 auto;
   }
 }

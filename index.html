@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <header>
     <div class="container">
       <nav class="navbar">
@@ -28,7 +29,7 @@
         <ul class="menu" id="menu">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="#sobre-evento">Sobre o Envento</a></li>
-          <li><a href="#Workshops">Workshops</a></li>
+          <li><a href="#workshops">Workshops</a></li>
           <li><a href="#programacao">Programação</a></li>
           <li><a href="#organizacao">Organização</a></li>
           <li><a href="#palestrantes">Palestrantes</a></li>
@@ -37,7 +38,9 @@
       </nav>
     </div>
   </header>
+  <!-- FIM NAVBAR -->
 
+  <!-- HERO SECTION -->
   <section class="hero-cover">
     <div class=".container">
       <div class="cover">
@@ -51,7 +54,9 @@
       </div>
     </div>
   </section>
+  <!-- FIM HERO SECTION -->
 
+  <!-- SOBRE O EVENTO -->
   <section id="sobre-evento">
     <h2>Sobre o Evento</h2>
     <div class="container">
@@ -86,112 +91,119 @@
       </div>
     </div>
   </section>
+  <!-- FIM SOBRE O EVENTO -->
 
-  <section id="Workshops">
+  <!-- WORKSHOPS -->
+  <section id="workshops">
+    <!-- Titulo da Seção -->
     <h2>Workshops</h2>
+    <!-- Container que engloba a seção -->
     <div class="container">
-      <div class="cards-wrapper">
-        <div class="card" id="pesqbase">
-          <div class="card-content">
-            <h3>PesqBase</h3>
+
+      <div class="cards">
+        <!-- CARD 1 - PesqBase -->
+        <div class="card card-pesqbase">
+          <h1>PesqBase</h1>
+          <div class="content">
             <p>Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica, TCC - Trabalho de
-              Conclusão de Curso)</p>
-            <a href="pages/pesqbase.html" class="saiba-mais">
-              <span>Saiba mais</span>
-            </a>
+              Conclusão
+              de Curso)</p>
+            <figure>
+              <img src="assets/pesqbase.svg" alt="">
+            </figure>
           </div>
-          <div class="card-image">
-            <img src="../assets/pesqbase.svg" alt="Microscope">
-          </div>
+          <a href="pages/pesqbase.html" class="link-pesqbase">Saiba mais</a>
         </div>
+        <!-- CARD 1 - PesqBase -->
 
-        <div class="card" id="weibase">
-          <div class="card-content">
-            <h3>WEIBase</h3>
-            <p>Workshop de Educação em Informática voltado para temas relacionados ao ensino e aprendizagem com o uso da
-              Computação.</p>
-            <a href="#" class="saiba-mais">
-              <span>Saiba mais</span>
-            </a>
+        <!-- CARD 2 - WeiBase -->
+        <div class="card card-weibase">
+          <h1>WeiBase</h1>
+          <div class="content">
+            <p>Workshop de Educação em Informática e Informática na Educação com pesquisas e relatos de experiência do
+              uso da Informática na educação, bem como políticas para a educação em Computação</p>
+            <figure>
+              <img src="assets/weibase.svg" alt="">
+            </figure>
           </div>
-          <div class="card-image">
-            <img src="../assets/weibase.svg" alt="Education">
-          </div>
+          <a href="pages/weibase.html" class="link-weibase">Saiba mais</a>
         </div>
+        <!-- CARD 2 - WeiBase -->
 
-        <div class="card" id="xbase">
-          <div class="card-content">
-            <h3>XBase</h3>
-            <p>Workshop de experimentos inovadores, inclusive protótipos de hardware e/ou software.</p>
-            <a href="#" class="saiba-mais">
-              <span>Saiba mais</span>
-            </a>
+        <!-- CARD 3 - xBase -->
+        <div class="card card-xbase">
+          <h1>XBase</h1>
+          <div class="content">
+            <p>Workshop de experimentos inovadores, solução e protótipos (de hardware e/ou software)</p>
+            <figure>
+              <img src="assets/xbase.svg" alt="">
+            </figure>
           </div>
-          <div class="card-image">
-            <img src="../assets/xbase.svg" alt="Innovation">
-          </div>
+          <a href="pages/xbase.html" class="link-xbase">Saiba mais</a>
         </div>
+        <!-- CARD 3 - xBase -->
 
-        <div class="card" id="progbase">
-          <div class="card-content">
-            <h3>ProgBase</h3>
-            <p>Competição entre equipes de programação, em que enfrentam-se os desafios de desenvolver soluções para
-              problemas complexos em diversos núcleos de informática.</p>
-            <a href="#" class="saiba-mais">
-              <span>Saiba mais</span>
-            </a>
+        <!-- CARD 4 - ProgBase -->
+        <div class="card card-progbase">
+          <h1>ProgBase</h1>
+          <div class="content">
+            <p>Competição entre equipes de programadores, em que a programação de computadores é o esporte e o desafio é
+              resolver problemas computacionais em diversos níveis</p>
+            <figure>
+              <img src="assets/progbase.svg" alt="">
+            </figure>
           </div>
-          <div class="card-image">
-            <img src="../assets/progbase.svg" alt="Programming">
-          </div>
+          <a href="pages/progbase.html" class="link-progbase">Saiba mais</a>
         </div>
+        <!-- CARD 4 - ProgBase -->
 
-        <div class="card" id="robobase">
-          <div class="card-content">
-            <h3>RoboBase</h3>
-            <p>Competição na qual os robôs criados e/ou configurados pelos estudantes realizam tarefas automatizadas
-              e/ou lutas.</p>
-            <a href="#" class="saiba-mais">
-              <span>Saiba mais</span>
-            </a>
+        <!-- CARD 5 - RoboBase -->
+        <div class="card card-robobase">
+          <h1>RoboBase</h1>
+          <div class="content">
+            <p>Competição na qual as habilidades e características dos robôs criados são avaliadas e testadas</p>
+            <figure>
+              <img src="assets/robobase.svg" alt="">
+            </figure>
           </div>
-          <div class="card-image">
-            <img src="../assets/robobase.svg" alt="Robotics">
-          </div>
+          <a href="pages/pesqbase.html" class="link-robobase">Saiba mais</a>
         </div>
+        <!-- CARD 5 - RoboBase -->
 
-        <div class="card" id="minicursos">
-          <div class="card-content">
-            <h3>Minicursos</h3>
-            <p>Atividades práticas de curta duração voltadas para a aprendizagem de novas tecnologias e técnicas na área
-              de Computação.</p>
-            <a href="pages/minicursos.html" class="saiba-mais">
-              <span>Saiba mais</span>
-            </a>
+        <!-- CARD 6 - Minicursos -->
+        <div class="card card-minicursos">
+          <h1>Minicursos</h1>
+          <div class="content">
+            <p>Atividades práticas e/ou teóricas que proporciona, novo conhecimento sobre temas atuais da Computação
+              compartilhado por pesquisadores experientes na área
+            </p>
+            <figure>
+              <img src="assets/minicursos.svg" alt="">
+            </figure>
           </div>
-          <div class="card-image">
-            <img src="../assets/minicursos.svg" alt="Minicourses">
-          </div>
+          <a href="pages/minicursos.html" class="link-minucursos">Saiba mais</a>
         </div>
+        <!-- CARD 6 - Minicursos -->
 
-        <div class="card" id="meninasdigitais">
-          <div class="card-content">
-            <h3>Meninas Digitais</h3>
-            <p>Workshop de ações, práticas e reflexões voltadas para o incentivo e motivação para mulheres e meninas nas
-              áreas da Computação e afins.</p>
-            <a href="pages/meninasdigitais.html">
-              <span>Saiba mais</span>
-            </a>
+        <!-- CARD 7 - Meninas Digitais -->
+        <div class="card card-meninas-digitais">
+          <h1>Meninas Digitais</h1>
+          <div class="content">
+            <p>Workshop de ações, projetos e experiências conduzidas por meninas e mulheres bem como ações voltadas para
+              a inclusão de meninas e mulheres na Computação e nas áreas Exatas </p>
+            <figure>
+              <img src="assets/meninas-digitais.svg" alt="">
+            </figure>
           </div>
-          <div class="card-image">
-            <img src="../assets/meninas-digitais.svg" alt="Girls in Tech">
-          </div>
+          <a href="pages/meninasdigitais.html" class="link-meninasdigitais">Saiba mais</a>
         </div>
+        <!-- CARD 7 - Meninas Digitais -->
       </div>
     </div>
   </section>
+  <!-- FIM WORKSHOPS -->
 
-
+  <!-- PROGRAMAÇÃO -->
   <section id="programacao">
     <div class="container">
       <div class="content-programacao">
@@ -201,7 +213,9 @@
       </div>
     </div>
   </section>
+  <!-- FIM PROGRAMAÇÃO-->
 
+  <!-- ORGANIZAÇÃO -->
   <section id="organizacao">
 
     <div class="content-organizacao">
@@ -256,7 +270,9 @@
     </div>
 
   </section>
+  <!-- FIM ORGANIZAÇÃO -->
 
+  <!-- PARCEIROS -->
   <section id="parceiros">
     <div class="container">
       <div class="content-parceiros">
@@ -275,16 +291,14 @@
         <h2>Apoio</h2>
         <div class="apoio">
           <img src="../assets/logo-ifba.png" alt="Logo IFBA" class="logo-ifba">
-          <img src="../assets/logo-anisio-teixeira.jpg" alt="Logo UNEB" class="logo-uneb">
+          <!-- <img src="../assets/logo-anisio-teixeira.jpg" alt="Logo UNEB" class="logo-uneb"> -->
         </div>
-
+        <!-- FIM PARCEIROS -->
       </div>
     </div>
   </section>
 
-
-
-
+  <!-- FOOTER -->
   <footer id="footer">
     <div class="container">
       <div class="footer-content">
@@ -305,7 +319,7 @@
       </div>
     </div>
   </footer>
-
+  <!-- FIM FOOTER -->
   <script src="js/scripts.js"></script>
 </body>
 

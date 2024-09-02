@@ -2,12 +2,13 @@
   text-align: center;
   padding-top: 8rem;
   font-size: 2rem;
-  color: #fff
+  color: #000
 }
 
 #sobre-evento {
   padding: 2rem 0;
-  background: url('../../assets/star.png') no-repeat, #333;
+  background: url('../../assets/star.png') no-repeat, #f1f1f1;
+
   background-position: bottom left;
 
 }
@@ -24,7 +25,7 @@
 
 .text-content p {
   text-align: justify;
-  color: #fff;
+  color: #000;
 }
 
 #sobre-evento .container {

@@ -1,7 +1,8 @@
 .hero-cover {
   padding-top: 0;
   margin: 0 auto;
-  background: url('https://s12.aconvert.com/convert/p3r68-cdx67/a3txi-wtxwh.svg') no-repeat right bottom 1%;
+  background: url('/assets/elevador.svg') no-repeat right bottom;
+  background-size: 13.75rem;
 
 }
 
@@ -9,7 +10,8 @@
   text-align: center;
   padding-top: 0.175rem;
   padding-bottom: 8rem;
-  background: url('https://s4.aconvert.com/convert/p3r68-cdx67/ah55k-1xm38.png') no-repeat left 1%;
+  background: url('/assets/realidade-virtual.jpg') no-repeat left;
+  background-size: contain;
 }
 
 .cover figure img {

@@ -8,6 +8,10 @@
   background-color: #333;
 }
 
+.hero-xbase {
+  background-color: #333;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -34,8 +38,22 @@
   background: #fff;
 }
 
+.hero-xbase h1 {
+  color: #333;
+  background: #fff;
+}
+
 .hero img {
   width: 8rem;
+}
+
+.link-email {
+  color: #0540F1;
+}
+
+.link-email:hover {
+  text-decoration: underline;
+  color: #0540F1;
 }
 
 @media (max-width: 760px) {

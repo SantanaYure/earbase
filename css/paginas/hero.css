@@ -72,3 +72,16 @@
     width: 8rem;
   }
 }
+
+.weibase h3 {
+  font-size: 1rem;
+}
+
+.bg-weibase {
+  background-color: #0540F1;
+}
+
+.bg-weibase h1 {
+  color: #333;
+  background-color: #f1f1f1;
+}

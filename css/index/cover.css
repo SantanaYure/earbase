@@ -39,8 +39,26 @@
   padding-top: 2rem;
 }
 
-.cover a {
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#location {
   display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: initial;
+}
+
+#location:hover {
+  color: #0540F1;
+}
+
+.cover a {
+  display: block;
+  max-width: 24rem;
   border-radius: 0.5rem;
   background: #0540F1;
   color: #fff;

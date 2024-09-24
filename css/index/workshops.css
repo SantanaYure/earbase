@@ -103,23 +103,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-/* Estilo para desativar cards */
-#workshops .cards .card-robobase,
-#workshops .cards .card-progbase {
-  opacity: 0.5;
-  /* Deixa o card com aparência desativada */
-  pointer-events: none;
-  /* Desativa interações, incluindo cliques */
-  filter: grayscale(100%);
-  /* Deixa o card em escala de cinza */
-}
-
-/* Estilo específico para links desativados dentro desses cards */
-#workshops .cards .card-robobase a,
-#workshops .cards .card-progbase a {
-  cursor: not-allowed;
-  /* Muda o cursor para indicar que o link está desativado */
-  color: #999;
-  /* Altera a cor do texto para indicar que o link está inativo */
-}

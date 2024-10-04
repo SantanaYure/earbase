@@ -1,0 +1,181 @@
+.pricing-table .bg-darkblue {
+  background-color: #0540F1;
+  color: #fff;
+}
+
+.pricing-table .bg-darkblue {
+  background-color: #3651A1;
+  color: #fff;
+}
+
+.pricing-table .bg-dark {
+  background-color: #262626;
+  color: #fff;
+}
+
+.pricing-table .bg-gray {
+  background-color: #474747;
+  color: #fff;
+}
+
+.main-subscribe {
+  padding-top: 10.3125rem;
+  flex-wrap: wrap;
+}
+
+.banner-subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 3.875rem;
+}
+
+.text-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.text-subscribe ul {
+  flex-direction: column;
+  padding-left: 2rem;
+  list-style-type: disc;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.text-subscribe .text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.text-subscribe .text span {
+  font-weight: bold;
+}
+
+
+/* ESTILOS TABELA */
+/* Estilos gerais da tabela */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ccc;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-table .bg-blue {
+  background-color: #0540F1;
+  /* Cor de fundo do cabeçalho */
+  color: white;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.pricing-table td {
+  background-color: #f9f9f9;
+}
+
+.pricing-table td:first-child {
+  text-align: left;
+}
+
+
+/* Estilos responsivos para mobile */
+@media (max-width: 768px) {
+  .pricing-table thead {
+    display: none;
+  }
+
+  .pricing-table tr {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-table td {
+    display: block;
+    text-align: center;
+    position: relative;
+    white-space: normal;
+  }
+
+  .pricing-table td:first-child {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Mantendo as cores do cabeçalho em mobile */
+  .pricing-table th.bg-darkblue,
+  .pricing-table td.bg-darkblue:first-child {
+    background-color: #3651A1;
+    color: white;
+  }
+
+  .pricing-table th.bg-dark,
+  .pricing-table td.bg-dark:first-child {
+    background: #262626;
+    color: white;
+  }
+
+  .pricing-table th.bg-gray,
+  .pricing-table td.bg-gray:first-child {
+    background: #474747;
+    color: white;
+  }
+
+  .pricing-table th.bg-blue,
+  .pricing-table td.bg-blue:first-child {
+    background: #0540F1;
+    color: white;
+  }
+
+  .pricing-table td:before {
+
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-left: 1rem;
+    font-weight: bold;
+    text-align: left;
+
+    /* Manter a cor definida pela classe do cabeçalho */
+  }
+
+  .pricing-table td[data-label="Estudantes"]:before {
+    content: '';
+  }
+}
+
+.btn-subscribe {
+  max-width: 20rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  background: #0540F1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3125rem;
+  letter-spacing: 0.0525rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem 4.76rem;
+  cursor: pointer;
+}
+
+.sub {
+  margin-top: 2rem;
+}

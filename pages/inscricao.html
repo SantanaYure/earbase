@@ -3,34 +3,407 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscrição</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Erbase - Incrições</title>
+  <link rel="stylesheet" href="../css/styles.css">
 
-  <style>
-    section {
-      width: 100%;
-    }
-
-    .container {
-      width: 80%;
-      margin: 60px auto;
-      text-align: center;
-    }
-
-    h1 {
-      text-transform: uppercase;
-      font-size: 3rem;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <section>
+  <header>
     <div class="container">
-      <h1>Em breve...</h1>
-      <a href="../index.html">Retornar para a página inicial.</a>
+      <nav class="navbar">
+        <a href="../index.html" class="link-logo">
+          <img src="../assets/logo.svg" alt="Logo Earbase">
+        </a>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu" id="menu">
+
+          <li><a href="../index.html#sobre-evento">Sobre</a></li>
+          <li><a href="../index.html#workshops">Chamadas e Workshops</a></li>
+          <li><a href="../index.html#programacao">Programação</a></li>
+          <li><a href="inscricao.html">Inscrições</a></li>
+          <li><a href="../index.html#organizacao">Organização</a></li>
+          <li><a href="../index.html#palestrantes">Palestrantes</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </header>
+
+  <main class="container main-subscribe">
+    <div class="banner-subscribe">
+      <h1 class="main-title">Inscrição Promocional</h1>
+      <figure>
+        <img src="../assets/banner-inscricao.png" alt="Banner Inscrição">
+      </figure>
+      <a href="https://centraldesistemas.sbc.org.br/ecos/erbase2024" target="_blanc" class="btn-subscribe"">Inscrição</a>
+    </div>
+
+    <div class=" text-subscribe">
+        <p>O COMBO é uma categoria que inclui a inscrição no evento + associação à SBC, com um valor diferenciado. As
+          categorias COMBO são a opção mais vantajosa para os não associados à SBC, pois os valores de inscrições são
+          menores do que as categorias sem combo e incluem a associação à SBC.</p>
+        <p>Acesse o site da SBC e veja porquê ser associado. Associar-se à SBC é uma forma de tornar a SBC ainda mais
+          forte para representar a nossa área de atuação junto aos diversos setores. Que tal fazer parte da nossa
+          Comunidade?</p>
+        <p>Alguns benefícios exclusivos de associado:</p>
+        <ul>
+          <li>Acesso à rede sem fio <a href="https://www.rnp.br/servicos/eduroam" target="_blanc"
+              class="link-email">Eduroam</a>;</li>
+          <li>Acesso às listas de discussão exclusivas para associados da SBC, com mais de 8 mil inscritos;</li>
+          <li>Desconto em inscrições nos mais de <a href="https://centraldesistemas.sbc.org.br/ecos" target="_blanc"
+              class="link-email">40
+              eventos</a>
+            realizados anualmente pela SBC;</li>
+          <li>Valor de inscrição diferenciado no <a
+              href="https://www.sbc.org.br/?option=com_content&view=article&layout=edit&id=458" target="_blanc"
+              class="link-email">POSCOMP</a>;</li>
+          <li>Acesso aos estudos realizados pela SBC e destinados a órgãos públicos ou privados, expressando posições
+            políticas da Sociedade.</li>
+        </ul>
+        <p>Veja os demais benefícios no site da <a href="https://www.sbc.org.br/" target="_blanc"
+            class="link-email">SBC.</a></p>
+
+        <div class="text">
+          <h2>Valores de Inscrições</h2>
+          <p>A inscrição na ERBASE dá direito à participação em todos os Workshops do evento (PesqBASE, WEIBASE, XBASE,
+            Meninas Digitais, RoboBASE e ProgBASE).
+            ATENÇÃO: as inscrições nos minicursos não estão incluídas na inscrição na ERBASE – só podem se inscrever nos
+            minicursos os inscritos na ERBASE 2024. Os valores das taxas de inscrição nos minicursos e na ERBASE 2024
+            estão
+            listados a seguir:</p>
+        </div>
+
+        <div class="text">
+          <h2>Comprovação da Categoria Escolhida</h2>
+          <p>Será exigido no momento da inscrição no sistema de inscrição (ECOS), para as categorias que necessitam de
+            algum tipo de comprovação, o upload que ateste a mesma. A verificação desse documento pode levar até 1 dia
+            útil.
+            Somente após a validação pela equipe da SBC, as formas de pagamento serão liberadas. O inscrito receberá
+            e-mails informativos em todas as etapas da evolução da inscrição na ERBASE 2024.</p>
+        </div>
+
+        <div class="text">
+          <h2>Inscrições para Autores</h2>
+          <p><span>A inscrição pagante de, no mínimo, um autor por artigo, por minicurso, por protótipo, INDEPENDENTE DA
+              CATEGORIA, é obrigatória para publicação do trabalho na SBC OpenLib e exposição no evento.</span> Autores
+            com mais de
+            um artigo, um minicurso ou um protótipo aprovado na ERBASE 2024 poderão realizar o pagamento de uma única
+            inscrição.</p>
+          <p>Uma inscrição só será considerada válida quando seu status aparecer como “Pago”, com exceção das inscrições
+            por nota de empenho ou faturamento, que possuem um prazo maior de processamento, e das inscrições de sócios
+            institucionais com direito à isenção, que serão verificadas junto à SBC.</p>
+        </div>
+
+        <div class="text">
+          <h2>Formas de Pagamento</h2>
+          <p>O pagamento das inscrições poderá ser realizado por meio de boleto bancário, cartão de crédito, débito em
+            conta
+            do Banco do Brasil, nota de empenho e faturamento, através do sistema de inscrições da SBC.</p>
+
+          <p><span>Os pagamentos por boleto e débito encerram-se dia 01/11/2024</span>, os pagamentos por cartão de
+            crédito, nota de
+            empenho e faturamento ficarão abertos até o último dia do evento.</p>
+
+          <p>No caso de inscrições por nota de empenho e faturamento, o participante deverá acessar o sistema e realizar
+            a
+            inscrição, selecionar a forma de pagamento “nota de empenho” ou “faturamento” e clicar em pagar. Então, o
+            sistema fornecerá as informações necessárias que devem constar na nota de empenho ou no pedido de
+            faturamento.
+          </p>
+
+          <div class="text">
+            <h2>Politica de Cancelamento</h2>
+            <p><span>Uma devolução de 30% do valor pago na inscrição da ERBASE 2024 poderá ser realizada até o dia
+                27/10/2024.</span>
+              Após esta data não haverá devolução de qualquer valor pago. A política se aplica tanto para o cancelamento
+              da inscrição, quanto para o cancelamento de qualquer atividade adicional. Para solicitar o cancelamento,
+              envie um e-mail para <span>faturamento@sbc.org.br</span>.</p>
+          </div>
+
+          <div class="text">
+            <h2>Valores de Inscrição</h2>
+            <p>A inscrição na ERBASE dá direito à participação em todos os Workshops (PesqBASE, WEIBASE, XBASE, Meninas
+              Digitais, RoboBASE e ProgBASE). </p>
+            <p>ATENÇÃO: as inscrições nos minicursos não estão incluídas na inscrição na ERBASE – só podem se inscrever
+              nos minicursos os inscritos na ERBASE 2024. Os valores das taxas de inscrição nos minicursos e na ERBASE
+              2024 estão listados a seguir:</p>
+          </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- TABELA ABAIXO -->
+    <div>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th class="bg-blue">Estudantes</th>
+            <th class="bg-blue">1ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-blue">2ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-blue">3ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-blue">Anuidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Estudante associado à SBC com anuidade vigente</td>
+            <td>R$ 30,00</td>
+            <td>R$ 40,00</td>
+            <td>R$ 50,00</td>
+            <td>R$ 31,00</td>
+          </tr>
+          <tr>
+            <td>Estudante associado à SBC com anuidade vencendo em até 90 dias<br>(COMBO: Inscrição no evento +
+              renovação da associação à SBC)</td>
+            <td>R$ 30,00</td>
+            <td>R$ 40,00</td>
+            <td>R$ 50,00</td>
+            <td>R$ 31,00</td>
+          </tr>
+          <tr>
+            <td>Estudante não associado ou com associação não vigente à SBC<br>(COMBO: Inscrição no evento + associação
+              à SBC)</td>
+            <td>R$ 30,00</td>
+            <td>R$ 40,00</td>
+            <td>R$ 50,00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Estudante não associado à SBC<br>(Somente inscrição no evento)</td>
+            <td>R$ 70,00</td>
+            <td>R$ 80,00</td>
+            <td>R$ 80,00</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- TABELA ABAIXO -->
+    <div>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th class="bg-darkblue">Estudantes de Pós-Graduação</th>
+            <th class="bg-darkblue">1ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-darkblue">2ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-darkblue">3ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-darkblue">Anuidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Estudante de pós graduação associado à SBC com anuidade vigente</td>
+            <td>R$ 40,00</td>
+            <td>R$ 40,00</td>
+            <td>R$ 80,00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Estudante de pós graduação associado à SBC com anuidade vencendo em até 90 dias<br>(COMBO: Inscrição no
+              evento + renovação da associação à SBC)</td>
+            <td>R$ 40,00</td>
+            <td>R$ 60,00</td>
+            <td>R$ 80,00</td>
+            <td>R$ 125,00</td>
+          </tr>
+          <tr>
+            <td>Estudante de pós graduação não associado ou com associação não vigente à SBC<br>(COMBO: Inscrição no
+              evento + associação à SBC)</td>
+            <td>R$ 40,00</td>
+            <td>R$ 60,00</td>
+            <td>R$ 80,00</td>
+            <td>R$ 125,00</td>
+          </tr>
+          <tr>
+            <td>Estudante de pós graduação não associado à SBC<br>(Somente inscrição no evento)</td>
+            <td>R$ 169,00</td>
+            <td>R$ 191,00</td>
+            <td>R$ 213,00</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ABAiXO -->
+    <div>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th class="bg-dark">Professores</th>
+            <th class="bg-dark">1ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-dark">2ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-dark">3ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-dark">Anuidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Professor de educação básica associado à SBC com anuidade vigente</td>
+            <td>R$ 50,00</td>
+            <td>R$ 60,00</td>
+            <td>R$ 70,00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Professor de educação básica associado à SBC com anuidade vencendo em até 90 dias<br>(COMBO: Inscrição
+              no evento + renovação da associação à SBC)</td>
+            <td>R$ 50,00</td>
+            <td>R$ 60,00</td>
+            <td>R$ 70,00</td>
+            <td>R$ 125,00</td>
+          </tr>
+          <tr>
+            <td>Professor de educação básica não associado ou com associação não vigente à SBC<br>(COMBO: Inscrição no
+              evento + associação à SBC)</td>
+            <td>R$ 50,00</td>
+            <td>R$ 60,00</td>
+            <td>R$ 70,00</td>
+            <td>R$ 125,00</td>
+          </tr>
+          <tr>
+            <td>Professor de educação básica não associado à SBC<br>(Somente inscrição no evento)</td>
+            <td>R$ 184,00</td>
+            <td>R$ 213,00</td>
+            <td>R$ 243,00</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th class="bg-gray">Profissionais / Efetivos</th>
+            <th class="bg-gray">1ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-gray">2ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-gray">3ª faixa de inscrição<br>(De 25/09 a 19/10)</th>
+            <th class="bg-gray">Anuidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Profissional associado à SBC com anuidade vigente</td>
+            <td>R$ 60,00</td>
+            <td>R$ 70,00</td>
+            <td>R$ 70,00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Profissional associado à SBC com anuidade vencendo em até 90 dias<br>(COMBO: Inscrição no evento +
+              renovação da associação à SBC)</td>
+            <td>R$ 60,00</td>
+            <td>R$ 70,00</td>
+            <td>R$ 70,00</td>
+            <td>R$ 356,00</td>
+          </tr>
+          <tr>
+            <td>Professor de educação básica não associado ou com associação não vigente à SBC<br>(COMBO: Inscrição no
+              evento + renovação da associação à SBC)</td>
+            <td>R$ 60,00</td>
+            <td>R$ 70,00</td>
+            <td>R$ 70,00</td>
+            <td>R$ 356,00</td>
+          </tr>
+          <tr>
+            <td>Profissional não associado à SBC<br>(Somente inscrição no evento)</td>
+            <td>R$ 430,00</td>
+            <td>R$ 459,00</td>
+            <td>R$ 488,00</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text-subscribe sub">
+      <div class="text">
+        <h2 class="h2">Comprovação da Categoria Escolhida</h2>
+        <p>Será exigido no momento da inscrição no sistema de inscrição (ECOS), para as categorias que necessitam de
+          algum
+          tipo de comprovação, o upload que ateste a mesma. A verificação desse documento pode levar até 1 dia útil.
+          Somente após a validação pela equipe da SBC, as formas de pagamento serão liberadas. O inscrito receberá
+          e-mails
+          informativos em todas as etapas da evolução da inscrição na ERBASE 2024.</p>
+      </div>
+
+      <div class="text">
+        <h2>Inscrições para Autores</h2>
+        <p><span>A inscrição pagante de, no mínimo, um autor por artigo, por minicurso, por protótipo, INDEPENDENTE DA
+            CATEGORIA, é obrigatória para publicação do trabalho na SBC OpenLib e exposição no evento.</span> Autores
+          com
+          mais de
+          um artigo, um minicurso ou um protótipo aprovado na ERBASE 2024 poderão realizar o pagamento de uma única
+          inscrição.</p>
+
+        <p>Uma inscrição só será considerada válida quando seu status aparecer como “Pago”, com exceção das inscrições
+          por
+          nota de empenho ou faturamento, que possuem um prazo maior de processamento, e das inscrições de sócios
+          institucionais com direito à isenção, que serão verificadas junto à SBC.
+        </p>
+      </div>
+
+      <div class="text">
+        <h2>Formas de Pagamento</h2>
+        <p>O pagamento das inscrições poderá ser realizado por meio de boleto bancário, cartão de crédito, débito em
+          conta do Banco do Brasil, nota de empenho e faturamento, através do sistema de inscrições da SBC.</p>
+
+        <p><span>Os pagamentos por boleto e débito encerram-se dia 01/11/2024</span>, os pagamentos por cartão de
+          crédito, nota de
+          empenho e faturamento ficarão abertos até o último dia do evento.</p>
+
+        <p>No caso de inscrições por nota de empenho e faturamento, o participante deverá acessar o sistema e realizar a
+          inscrição, selecionar a forma de pagamento “nota de empenho” ou “faturamento” e clicar em pagar. Então, o
+          sistema fornecerá as informações necessárias que devem constar na nota de empenho ou no pedido de faturamento.
+        </p>
+      </div>
+
+      <div class="text">
+        <h2>Política de Cancelamento</h2>
+        <p><span>Uma devolução de 30% do valor pago na inscrição da ERBASE 2024</span> poderá ser realizada até o dia
+          27/10/2024.
+          Após esta data não haverá devolução de qualquer valor pago. A política se aplica tanto para o cancelamento da
+          inscrição, quanto para o cancelamento de qualquer atividade adicional. Para solicitar o cancelamento, envie um
+          e-mail para <span>faturamento@sbc.org.br</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <img src="../assets/logo.svg" alt="ERBASE Logo">
+        </div>
+        <div class="social-media">
+          <span>Nos sigam nas redes</span>
+          <div class="icons">
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="../assets/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="../assets/facebook.svg" alt="Facebook">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <script src="../js/scripts.js"></script>
 </body>
 
 </html>

@@ -15,5 +15,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: erbase2024.ufba.br
-        username: gabriel.munoz@ufba.br
+        username: gabriel.munoz
         password: ${{ secrets.ufba_ftp_password }}

@@ -17,3 +17,4 @@ jobs:
         server: erbase2024.ufba.br
         username: gabriel.munoz
         password: ${{ secrets.ufba_ftp_password }}
+        server-dir: sharedirs/sharedir01/gabriel.munoz/public_html/

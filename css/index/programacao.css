@@ -9,8 +9,6 @@
 
 #programacao .container {
   display: flex;
-  justify-content: center;
-
 }
 
 #programacao .content-programacao {
@@ -34,4 +32,29 @@
   margin-top: 2rem;
   padding: 1rem 4.76rem;
   cursor: pointer;
+}
+
+.programacao-evento {
+  background-color: #0540F1;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(172, 166, 166, 0.5)
+}
+
+.programacao-dia h3 {
+  padding-bottom: 2rem;
+  color: #0540F1;
+}
+
+
+.programacao-evento h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.programacao-evento p span {
+  font-weight: bold;
 }

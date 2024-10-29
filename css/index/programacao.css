@@ -1,39 +1,93 @@
 #programacao {
   width: 100%;
-  background: #f1f1f1;
-  padding-bottom: 8rem;
+  background: #f9f9f9;
+  padding: 4rem 0;
 }
 
 #programacao h1 {
-  display: flex;
-  padding-top: 8rem;
-  margin-bottom: 4rem;
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #333;
 }
 
 #programacao h2 {
-  display: flex;
-  margin-bottom: 4rem;
   text-align: center;
-}
-
-#programacao .container {
-  display: flex;
-}
-
-#programacao .content-programacao {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
 .programacao-dia h3 {
   color: #0540F1;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  text-align: left;
+  /* Alinhado à esquerda */
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 600px;
 }
 
-.programacao-dia .evento {
-  padding-bottom: 1.725rem;
+.programacao-evento {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Alinhamento à esquerda */
+  width: 100%;
+  max-width: 600px;
+  /* Define um tamanho fixo para todos os cards */
+  min-height: 150px;
+  /* Define uma altura mínima uniforme */
+  margin: 0 auto 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.programacao-evento h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  /* Alinhado à esquerda */
+}
+
+.programacao-evento .evento span {
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
+  color: #333;
+  margin-bottom: 0.3rem;
+  text-align: left;
+  /* Alinhado à esquerda */
+}
+
+.programacao-evento .evento p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  text-align: left;
+  /* Alinhado à esquerda */
+}
+
+#programacao .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-programacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programacao-dia {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 600px;
 }

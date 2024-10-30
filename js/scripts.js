@@ -19,3 +19,18 @@ locationElement.addEventListener('click', function () {
   window.open('https://maps.app.goo.gl/W4X5bvmK6VUSPviJ7', '_blank');
 });
 
+function toggleSchedule(button) {
+  // Seleciona o elemento de eventos que é o próximo irmão do botão
+  const eventos = button.parentElement.nextElementSibling;
+
+  // Alterna a exibição entre "none" e "block"
+  if (eventos.style.display === "none") {
+    eventos.style.display = "block";
+    button.textContent = "▼"; // Muda o ícone para recolher
+  } else {
+    eventos.style.display = "none";
+    button.textContent = "►"; // Muda o ícone para expandir
+  }
+}
+
+

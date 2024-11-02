@@ -33,4 +33,32 @@ function toggleSchedule(button) {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".card-dia");
+  const horarios = document.querySelectorAll(".dia");
+
+  // Ocultar todos os horários ao carregar a página
+  horarios.forEach(horario => horario.style.display = "none");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      // Remover classe 'active' de todos os cards e esconder horários
+      cards.forEach(c => c.classList.remove("active"));
+      horarios.forEach(horario => horario.style.display = "none");
+
+      // Adicionar classe 'active' ao card clicado
+      card.classList.add("active");
+
+      // Mostrar o horário correspondente ao card clicado
+      const diaSelecionado = card.getAttribute("data-dia");
+      const horarioSelecionado = document.querySelector(`.dia[data-dia="${diaSelecionado}"]`);
+
+      if (horarioSelecionado) {
+        horarioSelecionado.style.display = "block";
+      }
+    });
+  });
+});
+
+
 

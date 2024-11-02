@@ -11,6 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -232,568 +237,438 @@
 
   <!-- PROGRAMAÇÃO -->
   <section id="programacao">
-    <h1>Programação</h1>
+    <div class="dia-container">
+      <h1>Programação</h1>
+      <div class="programacao-completa">
+        <a href="assets/docs/programacao.pdf" target="_blank">Programação Completa</a>
+      </div>
 
-    <!-- programação dia -->
-    <div class="pagina-container">
-      <div class="content-programacao">
-        <div class="btn-programacao">
-          <a href="https://i.postimg.cc/s2CYrrrq/programacao.jpg" target="_blank" class="btn-geral">Programação
-            Completa</a>
+      <div class="programacao-dia">
+        <div class="card-dia" data-dia="terca">
+          <h3>Terça-feira</h3>
+          <p>(5 de Novembro)</p>
         </div>
-        <div class="programacao-dia">
 
-          <!-- Horário 08:30 - 10:15 -->
+        <div class="card-dia" data-dia="quarta">
+          <h3>Quarta-feira</h3>
+          <p>(6 de Novembro)</p>
         </div>
-        <!-- fim programação dia -->
 
-        <!-- programação dia -->
-        <div class="programacao-dia">
-          <h2>Terça-feira (05 nov)</h2>
-
-          <!-- Horário 08:30 - 10:15 -->
-          <h3>
-            08:30 - 10:15
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Minicursos 1</a></h4>
-              <div class="evento">
-                <p><span>Biofeedback para Avaliar a Experiência do Usuário em Ambientes Imersivos</span></p>
-                <p>Sala 06</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Minicursos 2</a></h4>
-              <div class="evento">
-                <p><span>Criação de Treinamentos Imersivos com Unreal Engine: Aplicação em Impressoras 3D</span></p>
-                <p>Sala 07</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-              <div class="evento">
-                <p><span>ProgBASE</span></p>
-                <p>Laboratório de Informática</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Horário 10:30 - 12:30 -->
-          <h3>
-            10:30 - 12:30
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Minicursos 1</a></h4>
-              <div class="evento">
-                <p><span>Biofeedback para Avaliar a Experiência do Usuário em Ambientes Imersivos</span></p>
-                <p>Sala 06</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Minicursos 2</a></h4>
-              <div class="evento">
-                <p><span>Criação de Treinamentos Imersivos com Unreal Engine: Aplicação em Impressoras 3D</span></p>
-                <p>Sala 07</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-              <div class="evento">
-                <p><span>ProgBASE</span></p>
-                <p>Laboratório de Informática</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Horário 12:30 - 14:00 -->
-          <h3>
-            12:30 - 14:00
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4>Pausa</h4>
-              <div class="evento">
-                <p><span>Almoço</span></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Horário 14:00 - 15:00 -->
-          <h3>
-            14:00 - 15:00
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-              <div class="evento">
-                <p><span>ProgBASE</span></p>
-                <p>Laboratório de Informática</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Horário 15:00 - 16:30 -->
-          <h3>
-            15:00 - 16:30
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-              <div class="evento">
-                <p><span>ProgBASE</span></p>
-                <p>Laboratório de Informática</p>
-              </div>
-            </div>
-          </div>
+        <div class="card-dia" data-dia="quinta">
+          <h3>Quinta-feira</h3>
+          <p>(7 de Novembro)</p>
         </div>
-        <!-- fim programação dia -->
 
-        <!-- Adicione os blocos dos outros dias e horários da mesma forma -->
-
-        <!-- programação dia -->
-        <div class="programacao-dia">
-          <h2>Quarta-feira (06 nov)</h2>
-
-          <!-- programação dia e horário 08:30 - 10:15 -->
-          <div class="programacao-dia">
-            <h3>
-              08:30 - 10:15
-              <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-            </h3>
-            <div class="programacao-eventos" style="display: none;">
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Minicurso 3</a></h4>
-                <div class="evento">
-                  <p><span>Arquitetura Cloud AWS com Foco em Software Serverless</span></p>
-                  <p>Sala 06</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Minicurso 4</a></h4>
-                <div class="evento">
-                  <p><span>Introdução a práticas web acessíveis</span></p>
-                  <p>Sala 07</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/Meninas Digitais-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>Meninas Digitais 1</span></p>
-                  <p>Sala 08</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/WEIBASE-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>WEIBASE 1</span></p>
-                  <p>Sala 09</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/PesqBASE-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>PesqBASE 1</span></p>
-                  <p>Sala 10</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>ProgBASE</span></p>
-                  <p>Laboratório de informática</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>RoboBASE</span></p>
-                  <p>Arena</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fim programação dia e horário 08:30 - 10:15 -->
-
-
-
-          <!-- programação dia e horário 10:30 - 12:30 -->
-          <div class="programacao-dia">
-            <h3>
-              10:30 - 12:30
-              <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-            </h3>
-            <div class="programacao-eventos" style="display: none;">
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Minicurso 3</a></h4>
-                <div class="evento">
-                  <p><span>Arquitetura Cloud AWS com Foco em Software Serverless</span></p>
-                  <p>Sala 06</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Minicurso 4</a></h4>
-                <div class="evento">
-                  <p><span>Introdução a práticas web acessíveis</span></p>
-                  <p>Sala 07</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/Meninas Digitais Mesa.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>Meninas Digitais - Mesa redonda: Meninas Digitais Experiências na Bahia</span></p>
-                  <p>Sala 08</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/WEIBASE-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>WEIBASE 1</span></p>
-                  <p>Sala 09</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/PesqBASE-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>PesqBASE 1</span></p>
-                  <p>Sala 10</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>ProgBASE</span></p>
-                  <p>Laboratório de informática</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>RoboBASE</span></p>
-                  <p>Arena</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fim programação dia e horário 10:30 - 12:30 -->
-
-          <!-- programação dia -->
-          <div class="programacao-dia">
-            <!-- Horário 12:30 - 14:00 (Pausa para Almoço) -->
-            <h3>
-              12:30 - 14:00
-              <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-            </h3>
-            <div class="programacao-eventos" style="display: none;">
-              <div class="programacao-evento">
-                <h4>Pausa</h4>
-                <div class="evento">
-                  <p><span>Almoço</span></p>
-                </div>
-              </div>
-            </div>
-            <!-- Continue para os demais horários e dias -->
-          </div>
-          <!-- fim programação dia -->
-
-
-
-          <!-- Horário 14:00 - 15:00 -->
-          <h3>
-            14:00 - 15:00
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4> <a href="assets/docs/" class="link-email">Workshop</a></h4>
-              <div class="evento">
-                <p><span>ProgBASE</span></p>
-                <p>Laboratório de Informática</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4>
-                <a href="assets/docs/" class="link-email">Workshop</a>
-              </h4>
-              <div class="evento">
-                <p><span>RoboBASE</span></p>
-                <p>Arena</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Horário 15:00 - 16:30 -->
-          <h3>
-            15:00 - 16:30
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4>
-                <Workshop href="assets/docs/" class="link-email">Workshop</a>
-              </h4>
-              <div class="evento">
-                <p><span>ProgBASE</span></p>
-                <p>Laboratório de Informática</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-              <div class="evento">
-                <p><span>RoboBASE</span></p>
-                <p>Arena</p>
-              </div>
-            </div>
-          </div>
+        <div class="card-dia" data-dia="sexta">
+          <h3>Sexta-feira</h3>
+          <p>(8 de Novembro)</p>
         </div>
-        <!-- fim programação dia -->
-
-        <!-- programação dia -->
-        <div class="programacao-dia">
-          <h2>Quinta-feira (07 nov)</h2>
-
-          <!-- programação dia e horário 08:30 - 10:15 -->
-          <div class="programacao-dia">
-            <h3>
-              08:30 - 10:15
-              <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-            </h3>
-            <div class="programacao-eventos" style="display: none;">
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Minicurso 5</a></h4>
-                <div class="evento">
-                  <p><span>Apropriação Sociotécnica da Inteligência Artificial Generativa: implicações para a pesquisa
-                      científica no Sul Global</span></p>
-                  <p>Sala 06</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Minicurso 6</a></h4>
-                <div class="evento">
-                  <p><span>Digital Twins: conceitos, desafios, tendências e oportunidades</span></p>
-                  <p>Sala 07</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/WEIBASE-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>WEIBASE 1</span></p>
-                  <p>Sala 09</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/PesqBASE-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>PesqBASE 1</span></p>
-                  <p>Sala 10</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>ProgBASE</span></p>
-                  <p>Laboratório de informática</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>RoboBASE</span></p>
-                  <p>Arena</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fim programação dia e horário 08:30 - 10:15 -->
-
-
-          <!-- programação dia e horário 10:30 - 12:30 -->
-          <div class="programacao-dia">
-            <h3>
-              10:30 - 12:30
-              <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-            </h3>
-            <div class="programacao-eventos" style="display: none;">
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Minicurso 5</a></h4>
-                <div class="evento">
-                  <p><span>Apropriação Sociotécnica da Inteligência Artificial Generativa: implicações para a pesquisa
-                      científica no Sul Global</span></p>
-                  <p>Sala 06</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Minicurso 6</a></h4>
-                <div class="evento">
-                  <p><span>Digital Twins: conceitos, desafios, tendências e oportunidades</span></p>
-                  <p>Sala 07</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/XBASE Sessões.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>XBASE</span></p>
-                  <p>Sala 08</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/WEIBASE-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>WEIBASE 1</span></p>
-                  <p>Sala 09</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/PesqBASE-1.docx" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>PesqBASE 1</span></p>
-                  <p>Sala 10</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>ProgBASE</span></p>
-                  <p>Laboratório de informática</p>
-                </div>
-              </div>
-
-              <div class="programacao-evento">
-                <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-                <div class="evento">
-                  <p><span>RoboBASE</span></p>
-                  <p>Arena</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fim programação dia e horário 10:30 - 12:30 -->
-
-
-          <!-- Horário 12:30 - 14:00 (Pausa para Almoço) -->
-          <h3>
-            12:30 - 14:00
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4>Pausa</h4>
-              <div class="evento">
-                <p><span>Almoço</span></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Horário 14:00 - 15:00 -->
-          <h3>
-            14:00 - 15:00
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4>
-                <Workshop href="assets/docs/" class="link-email">Workshop</a>
-              </h4>
-              <div class="evento">
-                <p><span>ProgBASE</span></p>
-                <p>Laboratório de Informática</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/" class="link-email">Workshop</a></h4>
-              <div class="evento">
-                <p><span>RoboBASE</span></p>
-                <p>Arena</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Horário 15:00 - 16:30 -->
-          <h3>
-            15:00 - 16:30
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4>
-                <Workshop href="assets/docs/" class="link-email">Workshop</a>
-              </h4>
-              <div class="evento">
-                <p><span>ProgBASE</span></p>
-                <p>Laboratório de Informática</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4>
-                <Workshop href="assets/docs/" class="link-email">Workshop</a>
-              </h4>
-              <div class="evento">
-                <p><span>RoboBASE</span></p>
-                <p>Arena</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- fim programação dia -->
-
-        <!-- programação dia -->
-        <div class="programacao-dia">
-          <h2>Sexta-feira (08 nov)</h2>
-
-          <!-- Horário 08:30 - 10:15 -->
-          <h3>
-            08:30 - 10:15
-            <button class="toggle-button" onclick="toggleSchedule(this)">►</button>
-          </h3>
-          <div class="programacao-eventos" style="display: none;">
-            <div class="programacao-evento">
-              <h4><a href="assets/docs/PesqBASE-1.docx" class="link-email">Workshop</a></h4>
-              <div class="evento">
-                <p><span>PesqBASE 1</span></p>
-                <p>Sala 10</p>
-              </div>
-            </div>
-            <div class="programacao-evento">
-              <h4>Encerramento</h4>
-              <div class="evento">
-                <p><span>Palestra + Cerimônia de Premiação</span></p>
-                <p>Auditório 19</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- fim programação dia -->
-
       </div>
     </div>
+
+
+
+    <div id="programacao-horarios" class="programacao-horarios">
+      <!-- HORÁRIOS/DIA TERÇA -->
+      <div class="horarios-container dia" data-dia="terca">
+        <!-- 8:30 - 10:15 -->
+        <div class="card-horarios">
+          <h2>08:30 - 10:15</h2>
+          <h3>Minicurso 1</h3>
+          <p>Biofeedback para Avaliar a Experiência do Usuário em Ambientes Imersivos</p>
+          <h4>Sala 06</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Minicurso 2</h3>
+          <p>Criação de Treinamentos Imersivos com Unreal Engine: Aplicação em Impressoras 3D</p>
+          <h4>Sala 07</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>ProgBASE</p>
+          <h4>Laboratório de informática</h4>
+        </div>
+        <!-- 8:30 - 10:15 -->
+        <!--  10:30 - 12:30 -->
+        <div class="card-horarios">
+          <h2>10:30 - 12:30</h2>
+          <h3>Minicurso 1</h3>
+          <p>Biofeedback para Avaliar a Experiência do Usuário em Ambientes Imersivos</p>
+          <h4>Sala 06</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Minicurso 2</h3>
+          <p>Criação de Treinamentos Imersivos com Unreal Engine: Aplicação em Impressoras 3D</p>
+          <h4>Sala 07</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>ProgBASE</p>
+          <h4>Laboratório de informática</h4>
+        </div>
+        <!--  10:30 - 12:30 -->
+
+        <!-- ALMOÇO -->
+        <div class="card-horarios" style="text-transform: uppercase;">
+          <h3>12:30 - 14:00</h3>
+          <p>Almoço</p>
+          <h4>Pausa</h4>
+        </div>
+        <!-- ALMOÇO -->
+
+        <!-- 14:00 - 15:00 -->
+        <div class="card-horarios">
+          <h2>14:00 - 15:00</h2>
+          <h3>Palestra</h3>
+          <p>“Discriminação e Racismo Algorítmico: quando isso ocorre e possíveis soluções” – George Valença (UFRPE)</p>
+          <h4>Auditório 19</h4>
+        </div>
+
+
+        <div class="card-horarios">
+          <h3>Palestra</h3>
+          <p>“Discriminação e Racismo Algorítmico: quando isso ocorre e possíveis soluções” – George Valença (UFRPE)</p>
+          <h4>Auditório 19</h4>
+        </div>
+
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>ProgBASE</p>
+          <h4>Laboratório de informática</h4>
+        </div>
+        <!-- 14:00 - 15:00 -->
+
+        <!-- 15:00 - 16:30 -->
+        <div class="card-horarios">
+          <h2>15:00 - 16:30</h2>
+          <h3>Mesa Redonda</h3>
+          <p>“Plano Brasileiro de Inteligência Artificial” – Marlos (UFBA)</p>
+          <h4>Auditório 19</h4>
+        </div>
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>ProgBASE</p>
+          <h4>Laboratório de informática</h4>
+        </div>
+        <!-- 15:00 - 16:30 -->
+      </div>
+      <!-- HORÁRIOS DIA TERÇA-->
+
+      <!-- HORÁRIOS/DIA QUARTA -->
+      <div class="horarios-container dia" data-dia="quarta">
+        <!-- 8:30 - 10:15 -->
+        <div class="card-horarios">
+          <h2>08:30 - 10:15</h2>
+          <h3>Minicurso 3</h3>
+          <p>Arquitetura Cloud AWS com Foco em Software Serverless</p>
+          <h4>Sala 06</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Minicurso 4</h3>
+          <p>Introdução a práticas web acessíveis</p>
+          <h4>Sala 07</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <a href="assets/docs/Meninas Digitais-1.pdf" target="_blank">
+            <p>Meninas Digitais 1</p>
+          </a>
+          <h4>Sala 08</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <a href="assets/docs/WEIBASE-1.docx">
+            <p>WEIBASE 1</p>
+          </a>
+          <h4>Sala 09</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <a href="assets/docs/xbase.pdf">
+            <p>PesqBASE</p>
+          </a>
+          <h4>Sala 10</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>RoboBASE</p>
+          <h4>Arena</h4>
+        </div>
+
+        <!-- 10:30 - 12:30 -->
+        <div class="card-horarios">
+          <h2>10:30 - 12:30</h2>
+          <h3>Minicurso 3</h3>
+          <p>Arquitetura Cloud AWS com Foco em Software Serverless</p>
+          <h4>Sala 06</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Minicurso 4</h3>
+          <p>Introdução a práticas web acessíveis</p>
+          <h4>Sala 07</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Mesa Redonda</h3>
+          <a href="assets/docs/Meninas-Digitais-Mesa.pdf">
+            <p>“Meninas Digitais: experiência na Bahia” - Meninas Digitais</p>
+          </a>
+          <h4>Sala 08</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <a href="assets/docs/WEIBASE-1.pdf">
+            <p>WEIBASE 1</p>
+          </a>
+          <h4>Sala 09</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <a href="assets/docs/PesqBASE-1.pdf">
+            <p>PesqBASE</p>
+          </a>
+          <h4>Sala 10</h4>
+        </div>
+        <!-- 10:30 - 12:30 -->
+
+        <!-- ALMOÇO -->
+        <div class="card-horarios" style="text-transform: uppercase;">
+          <h2>12:30 - 14:00</h2>
+          <p>Almoço</p>
+          <h4>P<span style="text-transform: lowercase;">ausa</span></h4>
+        </div>
+        <!-- ALMOÇO -->
+
+        <!-- 14:00 - 15:00 -->
+        <div class="card-horarios">
+          <h2>14:00 - 15:00</h2>
+          <h3>Palestra</h3>
+          <p>“Do mundo físico ao mundo virtual: tecnologias, experiências, e perspectivas de desenvolvimento” - Hugo
+            Dantas (UFG)</p>
+          <h4>Auditório 19</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>RoboBASE</p>
+          <h4>Laboratório de informática</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>ProgBASE</p>
+          <h4>Laboratório de informática</h4>
+        </div>
+        <!-- 14:00 - 15:00 -->
+
+        <!-- AVISO -->
+        <div class="card-horarios aviso" style="margin-bottom: 2.13rem;">
+          <p>*Na quarta-feira as atividades do ProgBase se iniciam às 13h.</p>
+        </div>
+        <!-- AVISO -->
+
+        <!-- 15:00 - 16:30 -->
+        <!-- Horário 1 - Mesa Redonda -->
+        <div class="card-horarios">
+          <h2>15:00 - 16:30</h2>
+          <h3>Mesa Redonda</h3>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>RoboBASE</p>
+          <h4>Arena</h4>
+        </div>
+
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>ProgBASE</p>
+          <h4>Laboratório de informática</h4>
+        </div>
+        <!-- 15:00 - 16:30 -->
+
+        <!-- AVISO -->
+        <div class="card-horarios aviso" style="margin-bottom: 2.13rem;">
+          <p>*Na quarta-feira as atividades do ProgBase se iniciam às 13h.</p>
+        </div>
+        <!-- AVISO -->
+
+
+      </div>
+      <!-- HORÁRIOS DIA QUARTA-->
+
+      <!-- HORÁRIOS/DIA QUINTA -->
+      <div class="horarios-container dia" data-dia="quinta">
+        <!-- 8:30 - 10:15 -->
+        <!-- Horário 1 - Minicurso 5 -->
+        <div class="card-horarios">
+          <h2>08:30 - 10:15</h2>
+          <h3>Minicurso 5</h3>
+          <p>Apropriação Sociotécnica da Inteligência Artificial Generativa: Implicações para a pesquisa científica no
+            Sul Global</p>
+          <h4>Sala 06</h4>
+        </div>
+
+        <!-- Horário 2 - Minicurso 6 -->
+        <div class="card-horarios">
+          <h3>Minicurso 6</h3>
+          <p>Digital Twins: conceitos, desafios, tendências e oportunidades</p>
+          <h4>Sala 07</h4>
+        </div>
+
+        <!-- Workshop WEIBASE 3 -->
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <a href="assets/docs/WEIBASE-3.pdf">
+            <p>WEIBASE 3</p>
+          </a>
+
+          <h4>Sala 09</h4>
+        </div>
+
+        <!-- Workshop RoboBASE -->
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>RoboBASE</p>
+          <h4>Arena</h4>
+        </div>
+        <!-- 8:30 - 10:15 -->
+
+        <!-- 10:30 - 12:30 -->
+        <!-- Horário 1 - Minicurso 5 -->
+        <div class="card-horarios">
+          <h2>10:30 - 12:30</h2>
+          <h3>Minicurso 5</h3>
+          <p>Apropriação Sociotécnica da Inteligência Artificial Generativa: Implicações para a pesquisa científica no
+            Sul Global</p>
+          <h4>Sala 06</h4>
+        </div>
+
+        <!-- Horário 2 - Minicurso 6 -->
+        <div class="card-horarios">
+          <h3>Minicurso 6</h3>
+          <p>Digital Twins: conceitos, desafios, tendências e oportunidades</p>
+          <h4>--</h4> <!-- Sem local especificado -->
+        </div>
+
+        <!-- Workshop XBASE -->
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <a href="assets/docs/xbase.pdf">
+            <p>XBASE</p>
+          </a>
+          <h4>Sala 08</h4>
+
+        </div>
+
+        <!-- Workshop WEIBASE 4 -->
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <a href="assets/docs/WEIBASE-4.pdf">
+            <p>WEIBASE 4</p>
+          </a>
+          <h4>Sala 09</h4>
+        </div>
+
+        <!-- Workshop PesqBASE 4 -->
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>PesqBASE 4</p>
+          <a href="assets/docs/PesqBASE-4.pdf"></a>
+          <h4>Sala 10</h4>
+        </div>
+
+        <!-- Robobse -->
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>RoboBASE 4</p>
+          <h4>Arena</h4>
+        </div>
+        <!-- 10:30 - 12:30 -->
+
+        <!-- ALMOÇO -->
+        <div class="card-horarios" style="text-transform: uppercase;">
+          <h3>12:30 - 14:00</h3>
+          <p>Almoço</p>
+          <h4>Pausa</h4>
+        </div>
+        <!-- ALMOÇO -->
+
+        <!-- 14:00 - 15:00 -->
+        <!-- Horário 1 - Palestra -->
+        <div class="card-horarios">
+          <h2>14:00 - 15:00</h2>
+          <h3>Palestra</h3>
+          <p>“IA Generativa e Realidade Estendida: perspectivas e fronteira da pesquisa” - Ismar Frango</p>
+          <h4>Auditório 19</h4>
+        </div>
+
+        <!-- Workshop RoboBASE -->
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>RoboBASE</p>
+          <h4>Laboratório de informática</h4>
+        </div>
+        <!-- 14:00 - 15:00 -->
+
+        <!-- 15:00 - 16:30 -->
+        <!-- Horário 1 - Palestra -->
+        <div class="card-horarios">
+          <h2>15:00 - 16:30</h2>
+          <h3>Palestra</h3>
+          <p>“Jogos Digitais: Acessíveis, IA, Imersão” - Luiz Machado (IFBA Lauro de Freitas)</p>
+          <h4>--</h4> <!-- Sem local especificado -->
+        </div>
+
+        <!-- Workshop RoboBASE -->
+        <div class="card-horarios">
+          <h3>Workshop</h3>
+          <p>RoboBASE</p>
+          <h4>Arena</h4>
+        </div>
+        <!-- 15:00 - 16:30 -->
+
+
+      </div>
+      <!-- HORÁRIOS DIA QUINTA-->
+
+      <!-- HORÁRIOS DIA SEXTA-->
+      <div class="horarios-container dia" data-dia="sexta">
+
+        <!-- Horário 1 - Workshop PesqBASE -->
+        <div class="card-horarios">
+          <h2>08:30 - 10:15</h2>
+          <h3>Workshop</h3>
+          <a href="assets/docs/PesqBASE-1.pdf">
+            <p>PesqBASE</p>
+          </a>
+          <h4>Sala 10</h4>
+        </div>
+
+        <!-- Horário 2 - Encerramento e Premiação -->
+        <div class="card-horarios">
+          <h2>10:30 - 12:30</h2>
+          <h3>Workshop</h3>
+          <p>Palestra de encerramento + Premiação + Encerramento + ERBASE 2025</p>
+          <h4>--</h4> <!-- Sem local especificado -->
+        </div>
+
+      </div>
+      <!-- HORÁRIOS DIA SEXTA -->
+
   </section>
   <!-- FIM PROGRAMAÇÃO -->
 
